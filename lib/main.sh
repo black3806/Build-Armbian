@@ -32,7 +32,7 @@ backtitle="Armbian building script, http://www.armbian.com | Author: Igor Pecovn
 [[ -z $LANGUAGE ]] && export LANGUAGE="en_US:en"
 
 # default console if not set
-[[ -z $CONSOLE_CHAR ]] && export CONSOLE_CHAR="UTF-8"
+#[[ -z $CONSOLE_CHAR ]] && export CONSOLE_CHAR="UTF-8"
 
 [[ -z $FORCE_CHECKOUT ]] && FORCE_CHECKOUT=yes
 
