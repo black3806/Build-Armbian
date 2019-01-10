@@ -25,7 +25,7 @@ create_board_package()
 	local bootscript_dst=${BOOTSCRIPT##*:}
 
 	mkdir -p $destination/usr/share/armbian/
-	cp $SRC/config/bootscripts/$bootscript_src $destination/usr/share/armbian/$bootscript_dst
+	cp -r $SRC/config/bootscripts/$bootscript_src $destination/usr/share/armbian/$bootscript_dst
 	[[ -n $BOOTENV_FILE && -f $SRC/config/bootenv/$BOOTENV_FILE ]] && \
 		cp $SRC/config/bootenv/$BOOTENV_FILE $destination/usr/share/armbian/armbianEnv.txt
 
